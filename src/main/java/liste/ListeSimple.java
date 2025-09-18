@@ -8,11 +8,22 @@ public class ListeSimple {
         return size;
     }
 
+
+    /**
+    * ajout de nouvelle element dans la liste
+    * @param element valeur a ajouter
+    */
     public void ajout(int element) {
         tete = new Noeud(element, tete);
         size++;
     }
 
+
+    /**
+    * modification du premier element corespondant a la valeur voulu
+    * @param element element a changer
+    * @param nouvelleValeur nouvelle valeur 
+    */
     public void modifiePremier(Object element, Object nouvelleValeur) {
         Noeud courant = tete;
         while (courant != null && courant.getElement() != element)
@@ -21,6 +32,11 @@ public class ListeSimple {
             courant.setElement(nouvelleValeur);
     }
 
+    /**
+    * modification de tout element corespondant a la valeur voulu
+    * @param element element à changer
+    * @param nouvelleValeur nouvelle valeur 
+    */
     public void modifieTous(Object element, Object nouvelleValeur) {
         Noeud courant = tete;
         while (courant != null) {
@@ -30,6 +46,9 @@ public class ListeSimple {
         }
     }
 
+    /**
+     * transformation de la liste en texte
+     */
     public String toString() {
         StringBuilder sb = new StringBuilder("ListeSimple(");
         Noeud n = tete;
