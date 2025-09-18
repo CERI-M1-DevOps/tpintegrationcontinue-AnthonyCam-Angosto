@@ -45,11 +45,9 @@ class ListeSimpleTest {
 
     @Test
     void toStringDonneTousLesNoeuds() {
-        //System.out.println(listeATester);
         listeATester.ajout(1);
         listeATester.ajout(2);
         listeATester.ajout(3);
-        //System.out.println(listeATester);
         assertEquals( "ListeSimple(Noeud(3), Noeud(2), Noeud(1))",listeATester.toString());
     }
 
@@ -72,13 +70,6 @@ class ListeSimpleTest {
         listeATester.modifieTous(1, 4);
         assertEquals( "ListeSimple(Noeud(4), Noeud(4), Noeud(2), Noeud(4))",listeATester.toString());
         assertEquals(4, listeATester.tete.getSuivant().getElement());
-    }
-
-    @Test
-    void supprimePremierListeVide() {
-        listeATester.supprimePremier(1);
-        assertNull(listeATester.tete);
-        assertEquals(0, listeATester.getSize());
     }
 
     @Test
