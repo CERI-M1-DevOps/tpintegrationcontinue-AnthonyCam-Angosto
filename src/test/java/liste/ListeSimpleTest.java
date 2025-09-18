@@ -192,7 +192,7 @@ class ListeSimpleTest {
         listeATester.inverser();
         assertNull(listeATester.tete);
     }
-    
+
     @Test
     void inverserListeNbPairDElements() {
         listeATester.ajout(1);
@@ -267,6 +267,6 @@ class ListeSimpleTest {
         assertEquals("ListeSimple(Noeud(1), Noeud(2), Noeud(3), Noeud(4), Noeud(5))",listeATester.toString());
         listeATester.echanger(r1, r1);
         System.out.println(listeATester);
-        assertEquals("ListeSimple(Noeud(4), Noeud(2), Noeud(3), Noeud(1), Noeud(5))",listeATester.toString());
+        assertEquals("ListeSimple(Noeud(1), Noeud(2), Noeud(3), Noeud(4), Noeud(5))",listeATester.toString());
     }
 }
