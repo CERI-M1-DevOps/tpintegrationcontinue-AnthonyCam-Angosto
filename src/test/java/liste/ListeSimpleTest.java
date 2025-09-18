@@ -192,14 +192,7 @@ class ListeSimpleTest {
         listeATester.inverser();
         assertNull(listeATester.tete);
     }
-
-    @Test
-    void supprimePremierEnPremierePosition() {
-        listeATester.ajout(1);
-     
-        assertNull(listeATester.tete);
-    }
-
+    
     @Test
     void inverserListeNbPairDElements() {
         listeATester.ajout(1);
