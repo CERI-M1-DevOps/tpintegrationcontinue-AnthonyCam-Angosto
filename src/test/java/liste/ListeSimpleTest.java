@@ -190,6 +190,8 @@ class ListeSimpleTest {
     @Test
     void inverserListeVide() {
         listeATester.inverser();
+        assertNull(listeATester.tete);
+    }
 
     @Test
     void supprimePremierEnPremierePosition() {
