@@ -267,7 +267,7 @@ class ListeSimpleTest {
     void echangeEqual(){
         listeATester.ajout(5);
         listeATester.ajout(4);
-        Noeud r2 = listeATester.tete;
+        Noeud r1 = listeATester.tete;
         listeATester.ajout(3);
         listeATester.ajout(2);
         listeATester.ajout(1);
